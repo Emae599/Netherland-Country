@@ -8,30 +8,56 @@ body {
     font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
     line-height: 1.6;
     color: #212529;
-    overflow-x: hidden;
     background-color: #f8f9fa;
 }
 
-/* Layout Components */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+/* Head and Nav */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    padding: 16px 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-/* Hero Section */
-.hero {
-    height: 100vh;
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    color: #ff6b35;
+    text-decoration: none;
     display: flex;
     align-items: center;
+    gap: 8px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #212529;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;
     position: relative;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('img/home.jpg');
     background-size: cover;
@@ -39,6 +65,15 @@ body {
     color: white;
 }
 
-h1, p{
-    text-align: center;
+.home-content {
+    max-width: 600px;
+    text-align: center; 
+}
+
+.home-content h1 {
+    font-size: 70px;
+}
+
+.home-content p {
+    font-size: 25px;
 }
