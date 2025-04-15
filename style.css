@@ -11,6 +11,14 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
 /* Head and Nav */
 header {
     position: fixed;
