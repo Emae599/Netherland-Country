@@ -156,6 +156,10 @@ nav a {
     direction: rtl;
 }
 
+.exp-item:nth-child(even) .exp-content {
+    direction: ltr;
+}
+
 .exp-img {
     width: 100%;
     height: 400px;
@@ -167,3 +171,5 @@ nav a {
     color: #ff6b35;
     margin-bottom: 16px;
 }
+
+
