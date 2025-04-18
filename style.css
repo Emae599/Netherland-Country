@@ -90,6 +90,7 @@ nav a:hover {
 /* Discover Section */
 .discover {
     padding: 128px 0;
+    background-color: #ffe9b0;
 }
 
 .discover-intro {
@@ -170,4 +171,50 @@ nav a:hover {
     margin-bottom: 16px;
 }
 
+/* Footer */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 64px 0 32px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.footer-column h3 {
+    margin-bottom: 24px;
+    color: #E9C46A;
+}
+.copyright {
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #999;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #ff6b35;
+}
 
