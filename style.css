@@ -38,7 +38,7 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjusts spacing between flag and text */
+    gap: 10px; 
 }
 
 .flag-icon {
